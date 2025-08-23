@@ -12,6 +12,13 @@ public class Persona {
 	private String telefono;
 	private String email;
 	
+	@Override
+	public String toString() {
+		return "Persona [dni=" + dni + ", nombre=" + nombre + ", apellido=" + apellido + ", fechaNacimiento="
+				+ fechaNacimiento + ", genero=" + genero + ", direccion=" + direccion + ", telefono=" + telefono
+				+ ", email=" + email + "]";
+	}
+	
 	//GETTERS Y SETTERS
 	public String getDni() {
 		return dni;
