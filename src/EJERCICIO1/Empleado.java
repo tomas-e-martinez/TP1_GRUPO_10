@@ -24,8 +24,8 @@ public class Empleado extends Persona {
             	String puesto)
 	{
 		super(dni, nombre, apellido, fechaNacimiento, genero, direccion, telefono, email);
-		this.legajo = contadorLegajo;
-		contadorLegajo++;
+		this.legajo = contadorLegajo++;
+		//contadorLegajo++;
 		this.puesto = puesto;
 	}
 
