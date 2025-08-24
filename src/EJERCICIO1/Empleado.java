@@ -1,5 +1,7 @@
 package EJERCICIO1;
 
+import java.time.LocalDate;
+
 public class Empleado extends Persona {
 
 	private final int legajo;
@@ -13,10 +15,31 @@ public class Empleado extends Persona {
 		this.puesto = "sin puesto";
 	}
 
+	public Empleado(String dni, 
+			String nombre, 
+			String apellido, 
+			LocalDate fechaNacimiento,
+            String genero, String direccion, String telefono, String email,
+            String puesto) {
+			super(dni, nombre, apellido, fechaNacimiento, genero, direccion, telefono, email);
+			this.legajo = contadorLegajo;
+			contadorLegajo++;
+			this.puesto = puesto;
+	}
+
+	public static int devuelveProximoLegajo() {
+	    return contadorLegajo;
+	}
+
+
 	
 	@Override
 	public String toString() {
-		return "Legajo del empleado:" + legajo + ", Puesto del empleado:" + puesto;
+	    return "Empleado{" +
+	           "legajo= " + legajo +
+	           ", puesto='" + puesto + '\'' +
+	           ", " + super.toString() +
+	           '}';
 	}
 
 
