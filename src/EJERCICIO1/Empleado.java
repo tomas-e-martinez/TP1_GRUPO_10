@@ -8,8 +8,8 @@ public class Empleado extends Persona {
 	
 	public Empleado() {
 		super();
-		contadorLegajo++;
 		this.legajo = contadorLegajo;
+		contadorLegajo++;
 		this.puesto = "sin puesto";
 	}
 
