@@ -56,9 +56,5 @@ public class Empleado extends Persona {
 	public void setPuesto(String puesto) {
 		this.puesto = puesto;
 	}
-
-	public static int getContadorLegajo() {
-		return contadorLegajo;
-	}
 	 
 }
